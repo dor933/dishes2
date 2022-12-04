@@ -26,12 +26,23 @@ return (
         console.log(readydishes);
 
         return (
-            <div className="row" style={{marginBottom:"75px"}}>
+
+            <div>
+            <div className="row">
+                <div class="col-12">
+                    <h1>Dishes ready to eat: {readydishes.length}</h1>
+                </div>
+            </div>
+
+            <div class="row" style={{marginBottom:"75px"}}>
+
+             
         
              {readydishes.map((dish) => {
                  return <Recipe key={dish.id} recipe={dish} current="eat" label="Eat Dish" />
              })}
                     
+            </div>
             </div>
                )
 

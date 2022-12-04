@@ -189,7 +189,4 @@ render(){
 
 
 
-
-
-
 export default Mykitchen;
